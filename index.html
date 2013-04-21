@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<link rel="stylesheet" href="css/style.css"></link>
+
+		<!-- Get the latest version of jQuery hosted by google -->
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+		<script type="text/javascript" src="js/answer-check-obfuscated.js"></script>
+		<!-- 
+		 Normally, for the purpose of loading pages quickly,
+		 scripts would go in the body, just before the closing </body> tag.
+		 For simplicity's sake, I've put them in the <head>.
+	
+		 Notice, also, the path for the script.js file - normally I would
+		 encourage you to set the file path as "/script.js", which means "script.js
+		 is located in the root directory of the site" but I left the
+		 leading slash off so you could run this in a non-server environment (ask me
+		 if you want more details about that).
+
+		 The current file path just means "script.js is located in the same
+		 directory as the file that's including it". Since all the html files
+		 in this project are located in the same folder, this is fine, but
+		 it's important to understand the distinction.
+		  -->
+	</head>
+	<body>
+		<div id="wrapper">
+			<!-- <nav>
+				<ul>
+					<li><a href="#top">Top</a></li>
+					<li><a href="#selectors">Selectors</a></li>
+					<li><a href="#traversal">Traversal</a></li>
+					<li><a href="#dom-manipulation">DOM Manipulation</a></li>
+					<li><a href="#animation">Animation</a></li>
+				</ul>
+			</nav> -->
+			<div id="ga-header" class="clearfix">
+				<img width="25" src="GA_cog_300px.png" />
+			</div>
+			<div id="content">
+
+				<div id="main">
+
+					
+					<h1>Bite-sized Problem-solving</h1>
+					<p class="directions">We are going to again focus on problem-solving in Javascript, but this time we will break the problems into smaller, more manageable pieces. Each problem below is self-contained and will let you know immediately upon submitting the code whether you have an acceptable answer or whether you still need to keep working.</p>
+					<br />
+					<p class="directions">We will also spend some time using loops and other Javascript tools to fill in missing pieces of small problems.</p>
+					<br />
+					<p class="directions">These problems are pure Javascript, so you can use console.log() by typing it into the textareas.</p>
+					<div class="section">
+						
+						<h2>Problem #1</h2>
+						<p class="directions">Add only one character to make the value of the variable <code>isCorrect</code> true at the end of the snippet</p>
+<pre><code class="sample"></code></pre>
+
+<a class="show-original" href="#">Show original code</a>
+
+<textarea id="answer1">
+var apples = 1;
+var oranges = 2;
+var isCorrect = true;
+
+if(apples = oranges) {
+	isCorrect = false;
+}
+
+return isCorrect;
+</textarea>
+						<button class="submit">Test</button>
+						<div class="hint-container">
+							<div>Stumped? Here's a <a href="#" class="hint">hint</a></div>
+						</div>
+						<div class="return"></div>
+						<div class="result"></div>
+						<div class="notes"></div>
+					</div>
+
+					<div class="section">
+						
+						<h2>Problem #2</h2>
+						<p class="directions">Find and return the largest number in the array <code>numbers</code></p>
+<pre><code class="sample"></code></pre>
+
+<a class="show-original" href="#">Show original code</a>
+
+<textarea id="answer2">
+var numbers = [1,7,3,8,9];
+var max = 0;
+
+for(var i = 0; i < numbers.length - 1; i++) {
+	if(numbers[i] > max) {
+		max = numbers[i];
+	}
+}
+
+return max;
+</textarea>
+						<button class="submit">Test</button>
+
+						<div class="hint-container">
+							<div>Stumped? Here's a <a href="#" class="hint">hint</a></div>
+						</div>
+
+						<div class="return"></div>
+						<div class="result"></div>
+						<div class="notes"></div>
+					</div>
+
+					<div class="section">
+						
+						<h2>Problem #3</h2>
+						<p class="directions">Fix all errors in the code below.</p>
+<pre><code class="sample"></code></pre>
+
+<a class="show-original" href="#">Show original code</a>
+
+<textarea id="answer3">
+var number;
+var obj = {key: 'value', key2: value2};
+
+number = getNumbr();
+
+function getNumber()
+	return parseInt(Math.random() * 10);
+}
+
+return true;
+</textarea>
+						
+						<button class="submit">Test</button>
+
+						<div class="hint-container">
+							<div>Stumped? Here's a <a href="#" class="hint">hint</a></div>
+						</div>
+						<div class="return"></div>
+						<div class="result"></div>
+						<div class="notes"></div>
+					</div>
+
+					<div class="section">
+						
+						<h2>Problem #4</h2>
+						<p class="directions">The variable <code>message</code> should have a value of "I love coding" by the time it is returned. </p>
+<pre><code class="sample"></code></pre>
+
+<a class="show-original" href="#">Show original code</a>
+
+<textarea id="answer4">
+var message = 'I hate coding!';
+
+updateMessage();
+
+//change the value of message
+function updateMessage() {
+	var message = 'I love coding!'
+};
+
+return message;
+</textarea>
+						<button class="submit">Test</button>
+
+							<div class="hint-container">
+								<div>Stumped? Here's a <a href="#" class="hint">hint</a></div>
+							</div>
+
+						<div class="return"></div>
+						<div class="result"></div>
+						<div class="notes"></div>
+					</div>
+
+					<div class="section">
+						
+						<h2>Problem #5</h2>
+						<p class="directions">Fix any errors, update $newDiv's background color, and return it.</p>
+<pre><code class="sample"></code></pre>
+
+<a class="show-original" href="#">Show original code</a>
+
+<textarea id="answer5">
+var $newDiv = $('<div />');
+
+$newDiv.text('This is my div's text');
+
+$newDiv.css('background-color', 'a08963');
+
+return $newDiv.css('background-color');
+</textarea>
+						<button class="submit">Test</button>
+
+							<div class="hint-container">
+								<div>Stumped? Here's a <a href="#" class="hint">hint</a></div>
+							</div>
+
+						<div class="return"></div>
+						<div class="result"></div>
+						<div class="notes"></div>
+					</div>
+
+					<p class="directions section">Below are some short problems that will help you become more familiar with loops and other Javascript constructs. For these problems, there may not be a definitively "correct" answer, so feel free to experiment. There may be more- or less-efficient ways of solving the problems, however, and if you are curious, be sure to ask the instructor for efficiency tips.</p>
+
+					<div class="section">
+						
+						<h2>Problem #6</h2>
+						<p class="directions">Create a "while" loop which increases the value of the variable <code>counter</code> by the product of another variable, called <code>i</code>, and 100. Increment the value of <code>i</code> by one after each iteration of the loop. Stop the loop when <code>counter</code> is larger than 5000 and return the value of <code>counter</code>.</p>
+<pre><code class="sample"></code></pre>
+
+<a class="show-original" href="#">Show original code</a>
+
+<textarea id="answer6">
+var counter = 0;
+
+//your code here  
+
+return counter;
+</textarea>
+						<button class="submit">Test</button>
+						<div class="return"></div>
+						<div class="result"></div>
+						<div class="notes"></div>
+					</div>
+
+					<div class="section">
+						
+						<h2>Problem #7</h2>
+						<p class="directions">Recreate the problem above, this time using a "for" loop.</p>
+<pre><code class="sample"></code></pre>
+
+<a class="show-original" href="#">Show original code</a>
+
+<textarea id="answer7">
+var counter = 0;
+
+//your code here  
+
+return counter;
+</textarea>
+						<button class="submit">Test</button>
+						<div class="return"></div>
+						<div class="result"></div>
+						<div class="notes"></div>
+					</div>
+
+					<div class="section">
+						
+						<h2>Problem #8</h2>
+						<p class="directions">Use a loop to find the smallest number in the array <code>integers</code></p>
+<pre><code class="sample"></code></pre>
+
+<a class="show-original" href="#">Show original code</a>
+
+<textarea id="answer8">
+var integers = [17,32,4,9,35,78,2,5,18];
+var min = 1000000;
+
+//your code here
+
+return min;
+</textarea>
+						<button class="submit">Test</button>
+						<div class="hint-container">
+								<div>Stumped? Here's a <a href="#" class="hint">hint</a></div>
+							</div>
+						<div class="return"></div>
+						<div class="result"></div>
+						<div class="notes"></div>
+					</div>
+
+					<div class="section">
+						
+						<h2>Problem #9</h2>
+						<p class="directions">You have an array of objects which represent blog posts by different editors. Count and return the number of articles written by authors who have the word "Chris" somewhere in their name.</p>
+<pre><code class="sample"></code></pre>
+
+<a class="show-original" href="#">Show original code</a>
+
+<textarea id="answer9">
+var articles = [
+	{title: 'Adventures in Thailand', articleId: 734, author: 'Chris Jensen'},
+	{title: 'Hong Kong, Bridging East and West', articleId: 862, author: 'Mike Schmidt'},
+	{title: 'Williamsburg in the Summer', articleId: 943, author: 'Kathy Zhou'},
+	{title: 'Street Food Delights', articleId: 1012, author: 'Christina Romero'},
+	{title: 'Cleveland - the Best City You Will Never Visit', articleId: 1088, author: 'Terry Wallace'}
+];
+
+var count = 0;
+
+//your code here
+
+return count;
+</textarea>
+						<button class="submit">Test</button>
+						<div class="hint-container">
+								<div>Stumped? Here's a <a href="#" class="hint">hint</a></div>
+							</div>
+						<div class="return"></div>
+						<div class="result"></div>
+						<div class="notes"></div>
+					</div>
+
+
+					<div class="section">
+						
+						<h2>Problem #10</h2>
+						<p class="directions">Using the same list of articles, return an array of the IDs of articles whose publishing dates are less than six months old.</p>
+<pre><code class="sample"></code></pre>
+
+<a class="show-original" href="#">Show original code</a>
+
+<textarea id="answer10">
+var articles = [
+	{title: 'Adventures in Thailand', articleId: 734, author: 'Chris Jensen', pubDate: '2011-7-8'},
+	{title: 'Hong Kong, Bridging East and West', articleId: 862, author: 'Mike Schmidt', pubDate: '2012-4-16'},
+	{title: 'Williamsburg in the Summer', articleId: 943, author: 'Kathy Zhou', pubDate: '2012-7-20'},
+	{title: 'Street Food Delights', articleId: 1012, author: 'Christina Romero', pubDate: '2012-11-15'},
+	{title: 'Cleveland - the Best City You Will Never Visit', articleId: 1088, author: 'Terry Wallace', pubDate: '2013-2-3'}
+];
+
+var ids = [];
+//your code here
+
+return ids;
+</textarea>
+						<button class="submit">Test</button>
+						<div class="hint-container">
+								<div>Stumped? Here's a <a href="#" class="hint">hint</a></div>
+							</div>
+						<div class="return"></div>
+						<div class="result"></div>
+						<div class="notes"></div>
+					</div>
+
+					<div class="section">
+						
+						<h2>Problem #11</h2>
+						<p class="directions">Let's make lunch! </p>
+<pre><code class="sample"></code></pre>
+
+<a class="show-original" href="#">Show original code</a>
+
+<textarea id="answer11">
+
+var ingredients = [
+	{name: 'chicken', cookTime: 16, ready: false, overcooked: false},
+	{name: 'onions', cookTime: 10, ready: false, overcooked: false},
+	{name: 'peppers', cookTime: 10, ready: false, overcooked: false},
+	{name: 'rice', cookTime: 40, ready: false, overcooked: false},
+	{name: 'beans', cookTime: 10, ready: false, overcooked: false}
+];
+
+var maxCookTime = 0;
+
+//find out max cooking time
+
+//your code here
+
+
+
+//let's attempt to have everything done at the same time. 
+
+for(var elapsedTime = 0; elapsedTime < maxCookTime; elapsedTime++) {
+	//check to see whether you should start each ingredient.
+	//If you are not starting a given ingredient, check its status.
+}
+
+
+var numOvercooked = 0;
+var numReady = 0;
+
+for(var n = 0; n < ingredients.length; n++) {
+	if(ingredients[n].ready == true) {
+		numReady++;
+	}
+	if(ingredients[n].overcooked == true) {
+		numOvercooked++;
+	}
+}
+
+var results = numReady == ingredients.length && numOvercooked == 0;
+
+
+return results;
+
+
+
+function startCookingIngredient(index, startTime) {
+	ingredients[index].startTime = startTime;
+}
+
+function checkOnIngredient(index, elapsedTime) {
+	var remainingTime = cookTime - (elapsedTime - ingredients[index].startTime);
+
+	if(remainingTime == 0) {
+		ingredients[index].ready = true;	
+	} else if(remainingTime < 0) {
+		ingredients[index].overcooked = true;	
+	}
+}
+
+
+</textarea>
+						<button class="submit">Test</button>
+						<div class="hint-container">
+								<div>Stumped? Here's a <a href="#" class="hint">hint</a></div>
+							</div>
+						<div class="return"></div>
+						<div class="result"></div>
+						<div class="notes"></div>
+					</div>
+
+
+
+				</div> <!-- end #main -->
+			</div> <!-- end #content -->
+		</div> <!-- end #wrapper -->
+	</body>
+</html>

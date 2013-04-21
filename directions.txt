@@ -1,0 +1,12 @@
+Bite-sized Problem Solving
+
+Difficulty Level: Easy
+
+Technologies/skills used: Loops, functions, objects, debugging
+
+
+
+Problem Description:
+
+This is a debugging and problem-solving exercise intended to further refine debugging skills and problem-solving skills using Javascript constructs. All directions are in the index.html file.
+	
